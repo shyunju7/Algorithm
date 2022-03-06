@@ -1,5 +1,6 @@
 const solution = (arr) => {
   let answer;
+
   arr.sort((a, b) => a - b);
   answer = arr[0];
 
@@ -17,3 +18,7 @@ console.log(solution(arr));
   });
   answer = min;
  * **/
+
+/** 풀이 3
+ * answer = Math.min(...arr);
+ *  */
