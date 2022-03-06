@@ -3,10 +3,15 @@
 const solution = (arr) => {
   let answer;
 
-  let sum = 0;
+  let sumOfDwarfs = 0;
+  arr.map((height) => (sumOfDwarfs += height));
 
   for (let i = 0; i < arr.length; i++) {
-    for (let j = 1; j < arr.length - 1; j++) {}
+    for (let j = 1; j < arr.length; j++) {
+      if (sumOfDwarfs - (arr[i] + arr[j]) === 100) {
+        answer = arr.filter((height) => height !== arr[i] && height !== arr[j]);
+      }
+    }
   }
 
   return answer;
