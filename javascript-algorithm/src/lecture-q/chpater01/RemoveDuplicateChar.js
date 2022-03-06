@@ -7,7 +7,9 @@ const solution = (s) => {
 
   strArr.map((str) => {
     if (!answer.includes(str)) {
-      answer += str;
+      return (answer += str);
+    } else {
+      return -1;
     }
   });
 
