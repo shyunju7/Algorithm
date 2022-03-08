@@ -1,3 +1,4 @@
+/* 더하기 사이클 - 입력값과 같은 결과가 나오기 위해 몇번의 연산이 수행되는지 계산하는 프로그램 */
 const readline = require("readline");
 
 const solution = (num) => {
