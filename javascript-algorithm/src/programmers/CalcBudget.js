@@ -4,17 +4,20 @@ function solution(d, budget) {
 
   d.sort((a, b) => a - b);
 
-  let sumOfArr = d.reduce((a, b) => a + b, 0);
+  let sum = 0;
 
-  for (let i = d.length; i > 0; i--) {
-    if (sumOfArr - i >= budget) {
-      sumOfArr -= i;
-    } else {
+  for (let i = 0; i < d.length; i++) {
+    console.log(`${sum} + ${d[i]} < ${budget}`);
+    if (sum + d[i] < budget) {
+      sum += d[i];
       answer++;
+    } else if (sum + d[i] === budget) {
+      answer++;
+      break;
     }
   }
 
   return answer;
 }
 
-console.log(solution([2, 2, 3, 3], 10));
+console.log(solution([3, 2, 2, 3], 10));
