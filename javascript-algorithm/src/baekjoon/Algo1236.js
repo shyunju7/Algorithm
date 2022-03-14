@@ -36,7 +36,7 @@ const solution = (size, input) => {
   } else {
     answer = columns.length + rows.length - rows.length;
   }
-  return String(answer);
+  return answer;
 };
 
 const rl = readline.createInterface({
