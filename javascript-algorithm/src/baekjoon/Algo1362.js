@@ -10,9 +10,6 @@ const solution = (input) => {
 
   input.pop();
   for (let i = 0; i < input.length; i++) {
-    // console.log(
-    //   `i=${i}... input[i]=${input[i]}, weights=${weights}, isDead=${isDead}`
-    // );
     if (input[i] === "# 0") {
       if (isDead) {
         answer.push(`${scenCount} RIP`);
@@ -21,7 +18,6 @@ const solution = (input) => {
           ? answer.push(`${scenCount} :-)`)
           : answer.push(`${scenCount} :-(`);
       }
-      // console.log(`result >> isDead=${isDead}, scenCount=${scenCount}`);
       scenCount++;
       isDead = false;
     } else if (i === 0 || input[i - 1] === "# 0") {
