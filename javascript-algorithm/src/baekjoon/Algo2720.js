@@ -10,6 +10,7 @@ const solution = (input) => {
   while (input.length !== 0) {
     curMoney = input.shift();
 
+    // 풀이 1
     for (let i = 0; i < moneyList.length; ) {
       if (curMoney >= moneyList[i]) {
         curMoney -= moneyList[i];
@@ -20,6 +21,16 @@ const solution = (input) => {
         count = 0;
       }
     }
+
+    // 풀이 2
+    // for (let i = 0; i < moneyList.length; i++) {
+    //   if (curMoney >= moneyList[i]) {
+    //     answer += Math.floor(curMoney / moneyList[i]) + " ";
+    //     curMoney %= moneyList[i];
+    //   } else {
+    //     answer += 0 + " ";
+    //   }
+    // }
     answer += "\n";
   }
   return answer;
