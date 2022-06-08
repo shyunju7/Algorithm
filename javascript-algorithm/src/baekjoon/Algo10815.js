@@ -1,7 +1,7 @@
 /**
  * 백준 알고리즘 10815 숫자카드
  * 실버 5
- * 정렬
+ * 자료구조 정렬 이진탐색
  * **/
 const readline = require("readline");
 
