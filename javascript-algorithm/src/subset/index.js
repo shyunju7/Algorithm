@@ -1,3 +1,11 @@
+/*
+ * N : 총 N 개의 수
+ * numSet : 집합
+ * isSelected : 선택 여부 저장
+ * subset : 부분 집합 생성 함수
+ * print : 출력 함수
+ */
+
 let N = 4;
 let numSet = [1, 2, 3, 4];
 let isSelected = Array(N).fill(false);
