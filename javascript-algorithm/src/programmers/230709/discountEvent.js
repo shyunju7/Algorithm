@@ -1,5 +1,5 @@
 /*
-(7.9) 16:30 - 17:30
+(7.9) 16:30 - 17:00
 [PGS] 131127_할인행사_lv2
 https://school.programmers.co.kr/learn/courses/30/lessons/131127
 */
