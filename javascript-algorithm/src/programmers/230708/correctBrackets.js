@@ -1,6 +1,6 @@
 /*
 (07.08) 00:05 - 00:12
-12909_올바른 괄호_lv1
+12909_올바른 괄호_lv2
 https://school.programmers.co.kr/learn/courses/30/lessons/12909
 */
 
