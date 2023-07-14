@@ -1,3 +1,7 @@
+/* 
+[BOJ] 2646_치즈_골드4
+https://www.acmicpc.net/problem/2636
+*/
 const solution = (input) => {
   const dxdy = [
     [-1, 0],
