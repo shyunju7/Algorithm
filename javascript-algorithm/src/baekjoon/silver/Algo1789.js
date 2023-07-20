@@ -1,5 +1,5 @@
 /* 
-[BOJ] 2003_수들의 합
+[BOJ] 1789_수들의 합
 https://www.acmicpc.net/problem/1789
 */
 
