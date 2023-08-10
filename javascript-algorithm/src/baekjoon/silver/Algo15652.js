@@ -1,5 +1,5 @@
 /*
-[BOJ] 15651_N과 M(3)_실버3
+[BOJ] 15652_N과 M(4)_실버3
 https://www.acmicpc.net/problem/15650
 */
 const [N, M] = require("fs")
@@ -11,17 +11,17 @@ const [N, M] = require("fs")
 
 const numbers = Array(M).fill(false);
 const answer = [];
-const perm = (cnt) => {
+const perm = (idx, cnt) => {
   if (cnt === M) {
     answer.push(numbers.join(" "));
     return;
   }
 
-  for (let i = 1; i <= N; i++) {
+  for (let i = idx; i <= N; i++) {
     numbers[cnt] = i;
-    perm(cnt + 1);
+    perm(i, cnt + 1);
   }
 };
 
-perm(0);
+perm(1, 0);
 console.log(answer.join("\n"));
